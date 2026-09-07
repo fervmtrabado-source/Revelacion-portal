@@ -68,6 +68,16 @@ header{position:sticky;top:0;z-index:100;background:rgba(246,239,224,.94);backdr
 .hero .bar{width:120px;height:3px;background:var(--gold);margin:14px 0 22px}
 .hero p.lede{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:clamp(1.2rem,2.4vw,1.7rem);color:#f0e6d2;max-width:32ch;line-height:1.4;text-shadow:0 2px 14px rgba(0,0,0,.55);margin-top:18px}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.hero-divider{display:flex;align-items:center;gap:18px;margin-top:28px;max-width:720px}
+.hero-divider .ln{flex:1;height:1px}
+.hero-divider .ln.l{background:linear-gradient(90deg,transparent,var(--gold-lt))}
+.hero-divider .ln.r{background:linear-gradient(90deg,var(--gold-lt),transparent)}
+.hero-divider .txt{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:clamp(.78rem,1.5vw,.98rem);color:#f0e6d2;white-space:nowrap;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+@media(max-width:820px){
+  .hero-divider{max-width:100%;flex-wrap:wrap;justify-content:center;text-align:center;gap:10px}
+  .hero-divider .ln{display:none}
+  .hero-divider .txt{white-space:normal}
+}
 
 /* ---------- TARJETAS DE ACCESO ---------- */
 .quick{padding:clamp(28px,4vw,46px) 0 clamp(30px,4vw,50px)}
