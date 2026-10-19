@@ -20,51 +20,43 @@
 <meta name="twitter:image" content="https://www.revelacion.mx/images/whatsapp-thumbnail.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Inter:wght@400;500;600;700&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..800;1,6..96,400..800&family=Source+Sans+3:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./estilo.css">
 </head>
-<body>
+<body class="home">
 
 <header>
   <div class="nav">
-    <nav class="nav-links">
-      <a href="index.html" class="on">Inicio</a>
-      <a href="experiencias-cata.html">Catas</a>
+    <a class="nav-home" href="index.html" aria-label="Inicio — Revelación"><img src="./images/agave-icono.png" alt="" width="102" height="79"></a>
+    <nav class="nav-links" aria-label="Principal">
       <a href="https://cavarevelacion.netlify.app/" target="_blank" rel="noopener">La Cava</a>
-      <a href="maestro-ia-agave.html">Maestro IA gave</a>
       <a href="por-que-existimos.html">Nosotros</a>
     </nav>
-    <a class="nav-logo" href="index.html"><img src="./images/logo-revelacion.png" alt="Revelación — Experiencia de Tequila"></a>
-    <div class="nav-right">
-      <span class="nav-tag">Buen tequila, mejores historias</span>
-      <a class="btn btn-gold btn-sm" href="https://wa.me/525527708659" target="_blank" rel="noopener">Reservar</a>
-      <button class="menu-btn" id="menuBtn" aria-label="Menú"><span></span><span></span><span></span></button>
-    </div>
-  </div>
-  <div id="mobile-menu">
-    <a href="index.html">Inicio</a>
-    <a href="experiencias-cata.html">Catas y experiencias</a>
-    <a href="https://cavarevelacion.netlify.app/" target="_blank" rel="noopener">La Cava</a>
-    <a href="maestro-ia-agave.html">Maestro IA gave</a>
-    <a href="por-que-existimos.html">Por qué existimos</a>
-    <a href="https://wa.me/525527708659" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+    <a class="btn btn-outline btn-sm" href="https://wa.me/525527708659?text=Hola%2C%20quiero%20reservar%20una%20cata%20Revelaci%C3%B3n" target="_blank" rel="noopener">Reservar</a>
   </div>
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="hero tall" style="background-image:linear-gradient(100deg,rgba(10,14,10,.78) 0%,rgba(10,14,10,.46) 44%,rgba(10,14,10,.06) 76%),url(./images/hero-terraza.jpg)">
+<section class="hero hero-home">
   <div class="hero-inner">
-    <img class="hero-logo" src="./images/logo-hero.png" alt="Revelación — Experiencia de Tequila">
-    <div class="eyebrow">Tierra · Agave · Tradición · México</div>
-    <h1 class="sr-only">Catas de tequila</h1>
-    <p class="lede">Quizá tu tequila favorito, aún no se ha revelado.</p>
-    <div class="hero-divider"><span class="ln l"></span><span class="txt">Catas guiadas &middot; historias que inspiran &middot; el origen que da sentido &middot; M&eacute;xico en cada copa.</span><span class="ln r"></span></div>
-    <div class="hero-cta">
-      <a class="btn btn-gold" href="experiencias-cata.html">Ver las catas
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    <img class="hero-logo" src="./images/logo-revelacion-2026.png" alt="Revelación" width="622" height="201">
+    <h1 class="hero-title">Catas guiadas<br>y cultura de agave</h1>
+    <p class="hero-slogan">Tu gusto tiene sus secretos. Revélalos.</p>
+    <div class="hero-cta-home">
+      <a class="btn btn-cream btn-lg" href="experiencias-cata.html">Explorar las catas
+        <svg class="ico-copa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5h8c0 3.2-.5 5.8-1.6 7.4-.8 1.2-1.5 1.8-2.4 1.8s-1.6-.6-2.4-1.8C8.5 8.3 8 5.7 8 2.5z"/><path d="M8.3 6h7.4M12 11.7v8M8.5 21.5h7"/></svg>
       </a>
-      <a class="btn btn-dark" href="https://cavarevelacion.netlify.app/" target="_blank" rel="noopener">Conocer la cava
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      <p class="hero-note">Descubre lo que te gusta y aprende a elegir.</p>
+    </div>
+  </div>
+  <div class="wrap hero-band-wrap">
+    <div class="maestro-band">
+      <img src="./images/agave-icono.png" alt="" width="102" height="79">
+      <span class="mb-title">Maestro IA gave</span>
+      <span class="mb-div" aria-hidden="true"></span>
+      <p class="mb-text">Conversa con nuestra IA y explora tus preferencias.</p>
+      <a class="btn btn-outline btn-band" href="maestro-ia-agave.html">Conversar con Maestro
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
   </div>
@@ -149,8 +141,9 @@
 </a>
 
 <script>
+  var hd=document.querySelector('header');function sc(){hd.classList.toggle('scrolled',window.scrollY>40)}sc();window.addEventListener('scroll',sc,{passive:true});
   var mb=document.getElementById('menuBtn'),mm=document.getElementById('mobile-menu');
-  mb.addEventListener('click',function(){mm.classList.toggle('open')});
+  if(mb)mb.addEventListener('click',function(){mm.classList.toggle('open')});
 </script>
 </body>
 </html>
