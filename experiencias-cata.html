@@ -98,6 +98,9 @@ html{scroll-behavior:smooth}#rc-catas{scroll-margin-top:84px}
 </section>
 <script>
 (()=>{
+ if('scrollRestoration' in history)history.scrollRestoration='manual';
+ if(location.hash){history.replaceState(null,'',location.pathname+location.search);const top=()=>window.scrollTo({top:0,behavior:'instant'});top();addEventListener('load',top);}
+ document.querySelectorAll('a[href="#rc-catas"]').forEach(a=>a.addEventListener('click',e=>{const t=document.getElementById('rc-catas');if(!t)return;e.preventDefault();t.scrollIntoView({behavior:'smooth'});}));
  const root=document.getElementById('rc-catas');if(!root)return;
  const links=[...root.querySelectorAll('[data-rc-photo]')],box=root.querySelector('dialog'),large=box.querySelector('img'),caption=box.querySelector('p');
  let index=0,trigger=null,touchX=null,touchY=null;
